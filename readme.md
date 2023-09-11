@@ -10,7 +10,7 @@
    - Cloud Bootstrap
    - Spring Boot DevTools
    - Lombok
-3. Implement a CRUD application using the created project. The application will utilize a table entity with the table named "tb_tr_order" with the following fields:
+3. Implement a CRUD application using the created project. The application will utilize a table named "tb_tr_order" with the following fields:
    - Long id
    - int quantity
    - Long amount
