@@ -49,7 +49,7 @@
    git checkout -b lareza-farhan-wanaghi
    ```
 
-### 2. Implement a CRUD application
+### 2. Implement the CRUD application
 
 1. Rename the `application.properties` to `application.yaml` and edit its content:
 
