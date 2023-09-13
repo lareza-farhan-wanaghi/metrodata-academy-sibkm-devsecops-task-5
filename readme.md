@@ -49,7 +49,7 @@
    git checkout -b lareza-farhan-wanaghi
    ```
 
-### 2. Implementation
+### 2. Order service CRUD Implementation
 
 1. Rename the `application.properties` to `application.yaml` and edit its content:
 
