@@ -36,9 +36,9 @@
 3. Create a new branch:
 
    ```bash
-   cd product-service
    git checkout -b lareza-farhan-wanaghi
    ```
+
 
 ### 2. Implement the CRUD
 
@@ -68,12 +68,12 @@
        show-sql: true
    ```
 
-2. Go to the main working directory:
+2. Navigate to the main working directory:
    ```bash
    cd src/main/java/com/example/orderservice
    ```
 
-2. Create the controller:
+3. Create the controller:
 
    ```bash
    mkdir controller
@@ -95,7 +95,7 @@
    }
    ```
 
-3. Create the table entity with the table named "tb_tr_order":
+4. Create the table entity with the table named "tb_tr_order":
 
    ```bash
    mkdir entity
@@ -117,7 +117,7 @@
    }
    ```
 
-4. Create DTO (Data Transfer Object) for request:
+5. Create DTO (Data Transfer Object) for request:
 
    ```bash
    mkdir model 
@@ -137,7 +137,7 @@
    }
    ```
 
-5. Create DTO for response:
+6. Create DTO for response:
 
    ```bash 
    nano model/OrderResponse.java
@@ -156,7 +156,7 @@
    }
    ```
 
-6. Create the database object repository:
+7. Create the database object repository:
 
    ```bash
    mkdir repository
@@ -177,7 +177,7 @@
    }
    ```
 
-7. Create the service interface:
+8. Create the service interface:
 
    ```bash
    mkdir service
@@ -197,7 +197,7 @@
    }
    ```
 
-8. Create the service implementation:
+9. Create the service implementation:
 
    ```bash
    nano service/OrderServiceImpl.java
