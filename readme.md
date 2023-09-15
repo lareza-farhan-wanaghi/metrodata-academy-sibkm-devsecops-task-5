@@ -19,21 +19,12 @@
 
 ## Solution
 
-### 1. Project Setup
+### 1. Setup Project
 
 1. Visit the Spring Initializr webpage at [https://start.spring.io/](https://start.spring.io/) to create the Spring Boot project with the appropriate settings and click generate.
      <img src="_resources/Screenshot%202023-09-10%20at%2017.19.28.png" width="75%"/>
 
-2. Configure Git:
-
-   ```bash
-   git config --global user.name "<Your Name>"
-   git config --global user.email "<Your Email>"
-   echo "export GITHUB_TOKEN=<Your Access Token>" >> ~/.bashrc
-   source ~/.bashrc
-   ```
-
-3. Unzip the project, initialize a repository for the project, and set the Git remote address:
+2. Unzip the project, initialize a repository for the project, and set the Git remote address (assuming you have the git credential ready):
 
    ```bash
    unzip order-service.zip 
@@ -42,14 +33,14 @@
    git remote add order-service https://github.com/SIBKM-DevSecOps/order-service.git
    ```
 
-4. Create a new branch and push the project as the initial commit:
+3. Create a new branch:
 
    ```bash
    cd product-service
    git checkout -b lareza-farhan-wanaghi
    ```
 
-### 2. Implement the CRUD application
+### 2. Implement the CRUD
 
 1. Rename the `application.properties` to `application.yaml` and edit its content:
 
@@ -77,10 +68,16 @@
        show-sql: true
    ```
 
+2. Go to the main working directory:
+   ```bash
+   cd src/main/java/com/example/orderservice
+   ```
+
 2. Create the controller:
 
    ```bash
-   nano src/main/java/com/example/orderservice/controller/OrderController.java
+   mkdir controller
+   nano controller/OrderController.java
    ```
 
    Copy and paste the following content into `OrderController.java`:
@@ -101,7 +98,8 @@
 3. Create the table entity with the table named "tb_tr_order":
 
    ```bash
-   nano src/main/java/com/example/orderservice/entity/Order.java
+   mkdir entity
+   nano entity/Order.java
    ```
 
    Copy and paste the following content into `Order.java`:
@@ -122,7 +120,8 @@
 4. Create DTO (Data Transfer Object) for request:
 
    ```bash
-   nano src/main/java/com/example/orderservice/model/OrderRequest.java
+   mkdir model 
+   nano model/OrderRequest.java
    ```
 
    Copy and paste the following content into `OrderRequest.java`:
@@ -140,8 +139,8 @@
 
 5. Create DTO for response:
 
-   ```bash
-   nano src/main/java/com/example/orderservice/model/OrderResponse.java
+   ```bash 
+   nano model/OrderResponse.java
    ```
 
    Copy and paste the following content into `OrderResponse.java`:
@@ -160,7 +159,8 @@
 6. Create the database object repository:
 
    ```bash
-   nano src/main/java/com/example/orderservice/repository/OrderRepository.java
+   mkdir repository
+   nano repository/OrderRepository.java
    ```
 
    Copy and paste the following content into `OrderRepository.java`:
@@ -180,7 +180,8 @@
 7. Create the service interface:
 
    ```bash
-   nano src/main/java/com/example/orderservice/service/OrderService.java
+   mkdir service
+   nano service/OrderService.java
    ```
 
    Copy and paste the following content into `OrderService.java`:
@@ -199,7 +200,7 @@
 8. Create the service implementation:
 
    ```bash
-   nano src/main/java/com/example/orderservice/service/OrderServiceImpl.java
+   nano service/OrderServiceImpl.java
    ```
 
    Copy and paste the following content into `OrderServiceImpl.java`:
@@ -226,6 +227,7 @@ The overall project structure should now look similar to this:
 1. Run the program:
 
    ```bash
+   cd <Root Project Path>
    bash mvnw spring-boot:run
    ```
 
