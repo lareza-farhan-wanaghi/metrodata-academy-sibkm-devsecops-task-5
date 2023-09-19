@@ -2,20 +2,23 @@
 
 ## Objective
 
-1. Create a new branch in the Order-Service repository.
-2. Create a Spring Boot project named "order-service" with the following dependencies:
-   - Spring Web
-   - MySQL Driver
-   - Spring Data JPA
-   - Cloud Bootstrap
-   - Spring Boot DevTools
-   - Lombok
-3. Create CRUD APIs using the created project. The application will utilize a table named "tb_tr_order" with the following fields:
-   - Long id
-   - int quantity
-   - Long amount
-   - String status
-   - Instant date
+
+1. Initiate a Spring Boot Project Named "order-service" with the Following Dependencies:
+     - Spring Web
+     - MySQL Driver
+     - Spring Data JPA
+     - Cloud Bootstrap
+     - Spring Boot DevTools
+     - Lombok
+
+2. Implement CRUD (Create, Read, Update, Delete) APIs utilizing the previously created Spring Boot project. The application will make use of a table named "tb_tr_order" with the following fields:
+   - `Long id`
+   - `int quantity`
+   - `Long amount`
+   - `String status`
+   - `Instant date`
+
+3. Push the project to the provided remote repository.
 
 ## Solution
 
