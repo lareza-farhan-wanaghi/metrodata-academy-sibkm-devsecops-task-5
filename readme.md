@@ -10,7 +10,7 @@
    - Cloud Bootstrap
    - Spring Boot DevTools
    - Lombok
-3. Implement a CRUD application using the created project. The application will utilize a table named "tb_tr_order" with the following fields:
+3. Create CRUD APIs using the created project. The application will utilize a table named "tb_tr_order" with the following fields:
    - Long id
    - int quantity
    - Long amount
@@ -19,9 +19,10 @@
 
 ## Solution
 
-### 1. Setup Project
+### 1. Project Setup
 
 1. Visit the Spring Initializr webpage at [https://start.spring.io/](https://start.spring.io/) to create the Spring Boot project with the appropriate settings and click generate.
+
      <img src="_resources/Screenshot%202023-09-10%20at%2017.19.28.png" width="75%"/>
 
 2. Unzip the project, initialize a repository for the project, and set the Git remote address (assuming you have the git credential ready):
@@ -40,7 +41,7 @@
    ```
 
 
-### 2. Implement the CRUD
+### 2. Implementing the CRUD
 
 1. Rename the `application.properties` to `application.yaml` and edit its content:
 
@@ -222,7 +223,7 @@ The overall project structure should now look similar to this:
 <img src="_resources/Screenshot%202023-09-11%20at%2009.24.16.png" width="75%"/>
 
 
-### 3. Run and Test
+### 3. Running and Testing
 
 1. Run the program:
 
